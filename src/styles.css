@@ -1,6 +1,180 @@
+@media only screen and (min-width: 768px) {
+	.m {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.d {
+		display: none;
+	}
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	display: block;
+	color: white;
+	font-family: "Eczar", sans-serif;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 20px;
+	height: 65px;
+	background-image: linear-gradient(rgb(0, 99, 102), transparent);
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list-item {
+	margin-right: 50px;
+	font-size: 1.6rem;
+	/* font-weight: 600; */
+}
+
+#navbar-logo {
+	height: 45px;
+}
+
+#burger-ph {
+	margin-top: 10px;
+}
+
+.bar {
+	height: 2px;
+	width: 35px;
+	background-color: white;
+	margin-bottom: 10px;
+}
+
+#hero {
+	z-index: -1;
+	background-image: url('./artwork/tablemountain.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#content-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	padding: 80px 80px 30px 80px;
+	border-radius: 30px;
+	backdrop-filter: blur(2px);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.288), transparent);
+	box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+#intro-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#me {
+	position: absolute;
+	height: 300px;
+	top: -55px;
+	right: 57px;
+	/* outline: 1px solid blue; */
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+}
+
+#propic {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	object-position: 0 3px;
+	border-radius: 50%;
+	background-image: linear-gradient(transparent, rgba(0, 80, 0, 0.74));
+}
+
+#title {
+	font-size: 7rem;
+	color: rgba(0, 0, 0, 0.432);
+	line-height: 90px;
+	background-image: url('./artwork/tiger.gif');
+	background-position: 0;
+	background-size: cover;
+	margin-bottom: 5px;
+  -webkit-background-clip: text;
+}
+
+#title-help {
+	font-size: 1.8rem;
+	/* color: rgb(0, 56, 19); */
+	font-weight: 100;
+	text-align: center;
+	line-height: 10px;
+	margin-bottom: 25px;
+	text-shadow: 0 0 2px black;
+}
+
+.hero-btn {
+	font-size: 1.2rem;
+	color: rgb(255, 255, 255);
+	height: 50px;
+	padding: 0 30px;
+	border-radius: 20px;
+	background-image: linear-gradient(transparent, rgb(5, 36, 12));
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid rgb(0, 0, 0);
+	border-right: 1px solid rgb(0, 0, 0);
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.btnshome {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 80%;
+	margin-top: 10px;
+}
+
+#socials {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.socials-icon {
+	width: 40px;
+	margin-bottom: 15px;
+	filter: drop-shadow(2px 2px 2px black);
+}
+
+.quora {
+	border-radius: 50%;
+	height: 37px;
+}
+
+#blacken {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.199);
 }
