@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca">
 	<link rel="stylesheet" href='./styles.css'>
 	<title>Botlhale Setou</title>
 </head>
@@ -21,13 +26,14 @@
 		</div>
 
 		<ul class="nav-list">
-			<li class="nav-list-item">Home</li>
-			<li class="nav-list-item">Projects</li>
-			<li class="nav-list-item">About</li>
-			<li class="nav-list-item">Contact</li>
+			<li id="homebtn" class="nav-list-item">Home</li>
+			<li id="portfoliobtn" class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+			<li id="aboutbtn" class="nav-list-item">About</li>
+			<li id="contactbtn" class="nav-list-item">Contact</li>
 		</ul>
 	</nav>
 
+	<img id="mandela" src="./artwork/mandela.webp">
 	<!-- Main section -->
 	<main id="hero">
 		<div id="blacken"></div>
@@ -39,24 +45,58 @@
 				<h1 id="title">Botlhale Setou</h1>
 				<h2 id="title-help">Full-Stack Software Engineer (& Mentor)</h2>
 				<div class="btnshome">
-					<button type="button" class="hero-btn">Portfolio</button>
+					<a href="#portfolio" class="portbtna"><button type="button" class="hero-btn">Portfolio</button></a>
 					<button type="button" class="hero-btn">Message</button>
 				</div>
 			</div>
 		</div>
 		<div id="socials">
-			<img class="socials-icon" src="./artwork/github icon/GitHub-Mark-64px.png" alt="GitHub Icon">
-			<img class="socials-icon" src="./artwork/linkedin.png" alt="LinkedIn Icon">
-			<img class="socials-icon" src="./artwork/twitter.png" alt="Twitter Icon">
-			<img class="socials-icon quora" src="./artwork/quora.png" alt="Quora Icon">
+			<a href="https://github.com/Botlhale-Setou" target=”_blank”><img class="socials-icon" src="./artwork/github icon/GitHub-Mark-64px.png" alt="GitHub Icon"></a>
+			<a href="https://www.linkedin.com/in/botlhalesetou/" target=”_blank”><img class="socials-icon" src="./artwork/linkedin.png" alt="LinkedIn Icon"></a>
+			<a href="https://twitter.com/Botlhale_Setou" target=”_blank”><img class="socials-icon" src="./artwork/twitter.png" alt="Twitter Icon"></a>
+			<a href="https://www.quora.com/profile/Botlhale-Setou" target=”_blank”><img class="socials-icon quora" src="./artwork/quora.png" alt="Quora Icon"></a>
 		</div>
-
 	</main>
 
+	<div id="break1">
+		<p id="break1-text">“There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living.”<br><span id="mandela-span">- Nelson Mandela</span></p>
+	</div>
+
+	<div id="portfolio">
+		<div id="port-workdiv">
+			<!-- Dynamically created -->
+			<div id="port-work">
+				<button id="port-work-exit" type="button">OK</button>
+				
+	
+			</div>
+		</div>
+
+		<div id="port-navdiv">
+			<div id="port-blacken"></div>
+			<h2 id="port-title">PORTFOLIO</h2>
+		</div>
+	</div>
+
+	<div id="break2">
+		<p id="break2-text">“I have no special talent. I am only passionately curious.”<br><span id="mandela-span">- Albert Einstein</span></p>
+	</div>
+
+	<div id="about">
+		About Section
+	</div>
+
+	<div id="break2">
+		<p id="break2-text">“I have no special talent. I am only passionately curious.”<br><span id="mandela-span">- Albert Einstein</span></p>
+	</div>
+
+	<div id="contact">
+		Contact Section
+	</div>
 	<footer>
 		
 	</footer>
 
-	<script src="./index.js"></script>
+	<script type="module" src="./index.js"></script>
 </body>
 </html>

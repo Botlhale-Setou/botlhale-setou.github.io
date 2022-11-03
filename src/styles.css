@@ -21,10 +21,18 @@
 }
 
 body {
-	background-color: rgb(0, 0, 0);
+	background-color: whitesmoke;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
 }
 
 #navbar {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -40,12 +48,28 @@ body {
 
 .nav-list-item {
 	margin-right: 50px;
+	width: 100px;
 	font-size: 1.6rem;
-	/* font-weight: 600; */
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	text-justify: distribute;
+	transition: 0.2s;
+}
+
+.nav-list-item:hover {
+	filter: drop-shadow(-2px 0 2px white);
+	font-size: 1.55rem;
 }
 
 #navbar-logo {
 	height: 45px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+#navbar-logo:hover {
+	filter: drop-shadow(-2px 0 2px white);
 }
 
 #burger-ph {
@@ -64,13 +88,13 @@ body {
 	background-image: url('./artwork/tablemountain.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: absolute;
 	top: 0;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 #content-div {
@@ -78,11 +102,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	border-radius: 20px;
-	padding: 80px 80px 30px 80px;
+	padding: 40px 80px 30px 80px;
 	border-radius: 30px;
 	backdrop-filter: blur(2px);
 	background-image: linear-gradient(rgba(255, 255, 255, 0.288), transparent);
 	box-shadow: 1px 1px 5px rgb(0, 0, 0);
+	border-top: 3px solid rgb(226, 255, 246);
 }
 
 #intro-div {
@@ -95,11 +120,11 @@ body {
 #me {
 	position: absolute;
 	height: 300px;
-	top: -55px;
-	right: 57px;
-	/* outline: 1px solid blue; */
+	top: -161px;
+	left: 330px;
 	border-top-left-radius: 30%;
 	border-top-right-radius: 30%;
+	/* filter: drop-shadow(-7px 5px 5px black); */
 }
 
 #propic {
@@ -120,30 +145,47 @@ body {
 	background-size: cover;
 	margin-bottom: 5px;
   -webkit-background-clip: text;
+	z-index: 2;
 }
 
 #title-help {
 	font-size: 1.8rem;
-	/* color: rgb(0, 56, 19); */
+	font-family: 'Dosis';
+	color: rgb(255, 255, 255);
 	font-weight: 100;
 	text-align: center;
 	line-height: 10px;
-	margin-bottom: 25px;
-	text-shadow: 0 0 2px black;
+	padding-bottom: 30px;
+	/* margin-bottom: 25px; */
+	text-shadow: -1px 1px 1px rgb(226, 255, 246, 0.7);
+	/* border-bottom: 2px solid rgb(196, 196, 0); */
 }
 
 .hero-btn {
 	font-size: 1.2rem;
+	font-family: sans-serif;
 	color: rgb(255, 255, 255);
 	height: 50px;
 	padding: 0 30px;
 	border-radius: 20px;
-	background-image: linear-gradient(transparent, rgb(5, 36, 12));
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.507));
 	background-color: transparent;
 	border: none;
-	border-left: 1px solid rgb(0, 0, 0);
-	border-right: 1px solid rgb(0, 0, 0);
-	border-bottom: 1px solid rgb(0, 0, 0);
+	border-left: 2px solid rgb(226, 255, 246, 0.7);
+	border-right: 1px solid rgba(226, 255, 246, 0.7);
+	border-bottom: 2px solid rgb(226, 255, 246, 0.9);
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.portbtna {
+	font-family: sans-serif;
+	
+}
+
+.hero-btn:hover {
+	background-image: linear-gradient(transparent, rgba(107, 107, 107, 0.507));
+	font-size: 1.22rem;
 }
 
 .btnshome {
@@ -164,6 +206,11 @@ body {
 	width: 40px;
 	margin-bottom: 15px;
 	filter: drop-shadow(2px 2px 2px black);
+	transition: 0.2s;
+}
+
+.socials-icon:hover {
+	filter: drop-shadow(0 0 2px white);
 }
 
 .quora {
@@ -177,4 +224,224 @@ body {
 	position: absolute;
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.199);
+}
+
+#break1 {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#break2 {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#mandela {
+	width: 100vw;
+	position: fixed;
+	top: -300px;
+	height: 100vw;
+	object-fit: cover;
+	object-position: -800px -300px;
+	z-index: -1;
+}
+
+#break1-text {
+	font-size: 1.2rem;
+}
+
+#break2-text {
+	font-size: 1.2rem;
+}
+
+#mandela-span {
+	color: rgb(255, 136, 136);
+}
+
+#portfolio {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+#port-workdiv {
+	width: 70%;
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#port-navdiv {
+	width: 30%;
+	height: 100%;
+	box-shadow: -3px 0 5px black;
+	background-image: url('./artwork/productivity.jpg');
+	background-size: cover;
+	z-index: 1;
+}
+
+#port-work {
+	width: 71%;
+	height: 100%;
+	background-color: rgba(6, 2, 44, 0.37);
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
+	padding: 30px;
+	position: absolute;
+	transition: 0.6s;
+	left: -100vw;
+	z-index: 2;
+}
+
+#port-work-img {
+	margin-top: 30px;
+	width: 80%;
+	height: 700px;
+	margin-bottom: 35px;
+	object-fit: contain;
+}
+
+#port-work-desc {
+	width: 80%;
+	font-family: 'Lexend Deca';
+}
+
+#port-work-exit {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 4rem;
+	position: absolute;
+	right: 10%;
+	cursor: pointer;
+	transition: 0.2s;
+	font-family: 'Lexend Deca';
+}
+
+#port-work-exit:hover {
+	color: red;
+}
+
+#port-work-title {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	font-family: 'Lexend Deca';
+}
+
+#port-work-introdiv {
+	display: flex;
+	width: 70%;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#port-work-btns {
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	margin: 0 0 0 15px;
+}
+
+.port-work-btn {
+	height: 50px;
+	margin-bottom: 15px;
+	color: azure;
+	background-image: linear-gradient(green, black);
+	font-family: 'Lexend Deca';
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.port-work-btn:hover {
+	border: 1px solid rgb(135, 255, 106);
+	color: rgb(135, 255, 106);
+}
+
+#port-title {
+	color: white;
+	transform: rotate(90deg);
+	position: absolute;
+	font-size: 8rem;
+	font-family: 'Montserrat';
+	line-height: 0;
+	margin-top: 400px;
+	margin-left: -15vw;
+}
+
+.card {
+	height: 95px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 5px black;
+	border-bottom: 1px solid black;
+	background-image: url('./artwork/pattern.jpg');
+	margin-top: 15px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.cardTitle {
+	z-index: 1;
+	font-size: 1.8rem;
+	font-family: 'Raleway';
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.2s;
+	font-family: 'Lexend Deca';
+}
+
+#port-blacken {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.452);
+	position: absolute;
+}
+
+.card-darken2 {
+	width: 100%;
+	height: 95px;
+	position: absolute;
+	background-image: linear-gradient(transparent, rgb(29, 29, 29));
+	transition: 0.2s;
+}
+
+.card:hover > .card-darken2{
+	background-image: linear-gradient(transparent, rgb(14, 14, 14));
+}
+
+.card:hover > h3 {
+	font-size: 1.77rem;
+	color: rgb(193, 216, 149);
+}
+
+#about {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(60, 151, 109, 0.603);
+}
+
+
+#contact {
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(60, 151, 109, 0.603);
 }
