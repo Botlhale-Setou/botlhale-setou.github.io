@@ -23,6 +23,14 @@
 body {
 	background-color: whitesmoke;
 	overflow-x: hidden;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: mandatory;
+}
+
+.scrollable {
+	scroll-snap-align: start;
 }
 
 a {
@@ -141,8 +149,8 @@ a {
 	color: rgba(0, 0, 0, 0.432);
 	line-height: 90px;
 	background-image: url('./artwork/tiger.gif');
-	background-position: 0;
-	background-size: cover;
+	background-position: -130px;
+	background-size: 150%;
 	margin-bottom: 5px;
   -webkit-background-clip: text;
 	z-index: 2;
@@ -162,30 +170,33 @@ a {
 }
 
 .hero-btn {
-	font-size: 1.2rem;
-	font-family: sans-serif;
+	font-size: 1rem;
+	font-family: 'Inter';
 	color: rgb(255, 255, 255);
 	height: 50px;
-	padding: 0 30px;
-	border-radius: 20px;
-	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.507));
+	width: 170px;
 	background-color: transparent;
+	margin-top: 20px;
+	padding: 15px 20px;
+	border-radius: 15px;
+	outline: 1px solid white;
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.829));
+	background-color: rgba(0, 88, 0, 0.788);
 	border: none;
-	border-left: 2px solid rgb(226, 255, 246, 0.7);
-	border-right: 1px solid rgba(226, 255, 246, 0.7);
-	border-bottom: 2px solid rgb(226, 255, 246, 0.9);
 	transition: 0.2s;
 	cursor: pointer;
-}
-
-.portbtna {
-	font-family: sans-serif;
-	
+	box-shadow: -3px 3px 3px rgba(0, 39, 0, 0.788);
 }
 
 .hero-btn:hover {
-	background-image: linear-gradient(transparent, rgba(107, 107, 107, 0.507));
-	font-size: 1.22rem;
+	/* font-size: 0.95rem; */
+	background-color: rgba(255, 255, 255, 0.356);
+	outline: 2px solid rgb(8, 117, 50);
+	box-shadow: none;
+}
+
+.portbtna {
+	background-color: rgba(0, 184, 0, 0.76);
 }
 
 .btnshome {
@@ -211,12 +222,22 @@ a {
 
 .socials-icon:hover {
 	filter: drop-shadow(0 0 2px white);
+	transform: scale(1.1);
 }
 
 .quora {
 	border-radius: 50%;
 	height: 37px;
 }
+
+#socials-about {
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	left: 35%;
+	gap: 20px;
+}
+
 
 #blacken {
 	width: 100vw;
@@ -244,13 +265,22 @@ a {
 	justify-content: center;
 }
 
+#break3 {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 #mandela {
 	width: 100vw;
 	position: fixed;
-	top: -300px;
-	height: 100vw;
+	/* top: -300px; */
+	height: 100vh;
 	object-fit: cover;
-	object-position: -800px -300px;
+	/* object-position: -800px -300px; */
 	z-index: -1;
 }
 
@@ -283,6 +313,36 @@ a {
 	justify-content: center;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(0, 78, 78);
+	border: 2px solid rgb(0, 102, 102);
+}
+
+::-webkit-scrollbar-thumb {
+	background: whitesmoke;
+	background: linear-gradient(red, blue);
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:active {
+	border: 3px solid white;
+	background: rgb(255, 187, 187);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: linear-gradient(red, blue);
+	border-radius: 100vw;
+	border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(228, 228, 255);
+}
+
 #port-navdiv {
 	width: 30%;
 	height: 100%;
@@ -290,6 +350,7 @@ a {
 	background-image: url('./artwork/productivity.jpg');
 	background-size: cover;
 	z-index: 1;
+	position: relative;
 }
 
 #port-work {
@@ -326,11 +387,13 @@ a {
 	border: none;
 	color: white;
 	font-size: 4rem;
-	position: absolute;
-	right: 10%;
+	top: 20px;
+	position: fixed;
 	cursor: pointer;
 	transition: 0.2s;
 	font-family: 'Lexend Deca';
+	right: 40px;
+
 }
 
 #port-work-exit:hover {
@@ -437,11 +500,238 @@ a {
 	height: 100vh;
 	width: 100vw;
 	background-color: rgba(60, 151, 109, 0.603);
+	display: flex;
+	position: relative;
 }
 
+#perpmotion {
+	height: 90px;
+	width: 90px;
+	z-index: 2;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+
+#about-introdiv {
+	width: 30%;
+	background-image: url('./artwork/rhino1.jfif');
+	background-repeat: no-repeat;
+	background-position: 60%;
+	display: flex;
+	z-index: 2;
+}
+
+#about-title {
+	transform: rotate(-90deg);
+	font-size: 10rem;
+	font-family: 'Raleway';
+	margin-left: 400px;
+}
+
+#about-contentdiv {
+	width: 70%;
+	background-image: linear-gradient(black, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.473), transparent);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
+}
+
+#about-desc {
+	font-family: 'Raleway';
+	text-align: center;
+	font-size: 1.4rem;
+	z-index: 2;
+}
+
+#about-darken {
+	width: 71%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.596);
+}
+/* 
+#about-contactbtn {
+	z-index: 2;
+	margin-top: 50px;
+	width: 130px;
+	height: 40px;
+	background-color: green;
+	font-family: sans-serif;
+	cursor: pointer;
+} */
+
+#about-btns {
+	display: flex;
+	gap: 20px;
+}
+
+/* #about-portbtn {
+	z-index: 2;
+	margin-top: 50px;
+	width: 130px;
+	height: 40px;
+	background-color: green;
+	font-family: sans-serif;
+	cursor: pointer;
+} */
+
+.homebtn {
+	width: 50px;
+	position: absolute;
+	margin-top: 40px;
+	left: 20px;
+	transition: 0.15s;
+}
+
+.homebtn:hover {
+	filter: drop-shadow(0 0 2px white);
+}
+
+.messagebtn {
+	width: 50px;
+	position: absolute;
+	margin-top: 120px;
+	left: 20px;
+	transition: 0.15s;
+}
+
+.messagebtn:hover {
+	filter: drop-shadow(0 0 2px white);
+}
+
+.homebtn-port {
+	width: 50px;
+	position: absolute;
+	margin-top: 40px;
+	right: 20px;
+	transition: 0.15s;
+}
+
+.homebtn-port:hover {
+	filter: drop-shadow(0 0 2px white);
+}
+
+.messagebtn-port {
+	width: 50px;
+	position: absolute;
+	margin-top: 120px;
+	right: 20px;
+	transition: 0.15s;
+}
+
+.messagebtn-port:hover {
+	filter: drop-shadow(0 0 2px white);
+}
 
 #contact {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba(60, 151, 109, 0.603);
+	background-color: rgba(0, 0, 0, 0.603);
+	display: flex;
+	backdrop-filter: blur(10px);
+}
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+#contact-introdiv {
+	width: 30%;
+	background-image: url('./artwork/contact.jpg');
+	background-size: cover;
+	background-position: -100px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#contact-title {
+	transform: rotate(-90deg);
+	font-size: 10rem;
+	font-family: 'Raleway';
+}
+
+.homebtn-contact {
+	position: absolute;
+	width: 50px;
+	left: 20px;
+	top: 20px;
+	transition: 0.15s;
+}
+
+.homebtn-contact:hover {
+	filter: drop-shadow(0 0 2px white);
+}
+
+#fname {
+	width: 30%;
+	margin-bottom: 10px;
+	height: 35px;
+	color: black;
+	font-family: 'Lexend Deca';
+	border-radius: 8px;
+	padding-left: 8px;
+}
+
+#fmail {
+	width: 30%;
+	margin-bottom: 10px;
+	height: 35px;
+	color: black;
+	border-radius: 8px;
+	padding-left: 8px;
+	font-family: 'Lexend Deca';
+}
+
+#fmsg {
+	width: 30%;
+	margin-bottom: 30px;
+	height: 90px;
+	color: black;
+	border-radius: 8px;
+	padding-left: 8px;
+	padding-top: 6px;
+	font-family: 'Lexend Deca';
+}
+
+label {
+	width: 29%;
+	font-family: 'Lexend Deca';
+	margin-bottom: 3px;
+}
+
+.valign {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	cursor: pointer;
+	transition: 0.15s;
+}
+
+.valign:hover {
+	filter: drop-shadow(0 0 2px white);
+}
+
+.vg1 {
+	filter: invert();
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+
+.vg2 {
+	filter: invert();
+	top: 50%;
+	transform: translateY(-50%);	
+	right: 20px;
 }
