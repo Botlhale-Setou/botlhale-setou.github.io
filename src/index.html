@@ -72,16 +72,27 @@
 
 		<div id="about-contentdiv">
 			<div id="about-darken"></div>
-			<p id="about-desc">Hi there! My name is Botlhale.<br><br>
-				I’m a 28 year-old full-stack software engineering student (& mentor) from South Africa,<br>specialising in JavaScript and React, 
-				building software solutions for small businesses.<br><br>
-				Though primarily self-taught (C++, Java, Kotlin, etc), I’m currently enrolled in an immersive web development course (Microverse) where I’ve built
-				dozens of projects, using numerous technologies, in collaboration with over 100 developers worldwide.<br><br>
-				Before transitioning into software, I worked in client care services 
-				within the private sector (financial services) for a little over 5 years where I gained 
-				an invaluable social intuition and passion for exceeding end-user expectations - which I incorporate into every one of my projects.<br><br>
-				If you have a website/app you're thinking of developing<br>( or are looking to hire me 😉)<br>don't hesitate to hit the contact button below.
-			</p>
+				<div class="about-items">
+					<ul class="skills">
+						<li>CORE COMPETENCIES</li>
+						<li>HTML/CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+					</ul>
+				</div>
+
+				<p id="about-desc">Hi there! My name is Botlhale.<br><br>
+					I’m a 28 year-old full-stack software engineering student (& mentor) from South Africa,<br>specialising in JavaScript and React, 
+					building software solutions for small businesses.<br><br>
+					Though primarily self-taught (C++, Java, Kotlin, etc), I’m currently enrolled in an immersive web development course (Microverse) where I’ve built
+					dozens of projects, using numerous technologies, in collaboration with over 100 developers worldwide.<br><br>
+					Before transitioning into software, I worked in client care services 
+					within the private sector (financial services) for a little over 5 years where I gained 
+					an invaluable social intuition and passion for exceeding end-user expectations - which I incorporate into every one of my projects.<br><br>
+					If you have a website/app you're thinking of developing<br>( or are looking to hire me 😉)<br>don't hesitate to hit the contact button below.
+				</p>
+
+				
 
 			<div id="about-btns">
 				<a href="#contact" style="z-index: 2;"><button id="about-contactbtn" class="hero-btn portbtna" type="button">CONTACT</button></a>
@@ -132,6 +143,7 @@
 		</div>
 
 		<form id="contactForm" onsubmit="mailToMe(); reset(); return false;">
+			<h4 class="contactForward">Have an app/website you need built? Looking to hire me?<br>Send a message below and I'll make sure to respond ASAP ⚡️</h4>
 			<label for="fname">Name:</label>
 			<input id="fname" type="text" name="fname" required>
 			<label for="fmail">E-mail:</label>
@@ -140,19 +152,19 @@
 			<textarea name="fmsg" id="fmsg" cols="30" rows="10" required></textarea>
 			<button type="submit" class="hero-btn portbtna">SUBMIT</button>
 
-			<!-- <div id="socials-about">
+			<div id="socials-about">
 				<a href="https://github.com/Botlhale-Setou" target=”_blank”><img class="socials-icon" src="./artwork/github icon/GitHub-Mark-64px.png" alt="GitHub Icon"></a>
 				<a href="https://www.linkedin.com/in/botlhalesetou/" target=”_blank”><img class="socials-icon" src="./artwork/linkedin.png" alt="LinkedIn Icon"></a>
 				<a href="https://twitter.com/Botlhale_Setou" target=”_blank”><img class="socials-icon" src="./artwork/twitter.png" alt="Twitter Icon"></a>
 				<a href="https://www.quora.com/profile/Botlhale-Setou" target=”_blank”><img class="socials-icon quora" src="./artwork/quora.png" alt="Quora Icon"></a>
-			</div> -->
+			</div>
 		</form>
 
 	</div>
 	<footer>
 		
 	</footer>
-
+<!-- 1d8ba068-8d6b-453f-9b90-e6d7c072635e -->
 	<script type="module" src="./index.js"></script>
 
 <!-- SEND FORM DATA TO EMAIL -->
@@ -161,16 +173,14 @@
 		const mailToMe = () => {
 			console.log('doing');
 			Email.send({
-	    	Host : "smtp.elasticemail.com",
-  	  	Username : "botlhale.setou@gmail.com",
-    		Password : "C13253567B5FE6871B7F18CE60CBCA7DF103",
-    		To : 'botlhale.setou@gmail.com',
-    		From : document.querySelector('#fmail').value,
-    		Subject : "🚧PORT_MSG🚧",
-    		Body : "Finally..."
-			}).then(
-  			message => alert(message)
-			);
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 		}
 	</script>
 </body>
