@@ -301,6 +301,8 @@ a {
 	width: 100vw;
 	display: flex;
 	align-items: center;
+	border-top: 1px solid rgb(0, 51, 51);
+	box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 #port-workdiv {
@@ -311,6 +313,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.863);
 }
 
 ::-webkit-scrollbar {
@@ -499,9 +502,10 @@ body::-webkit-scrollbar-thumb {
 #about {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba(60, 151, 109, 0.603);
 	display: flex;
 	position: relative;
+	border-bottom: 1px solid rgb(0, 70, 70);
+	border-top: 1px solid rgb(0, 70, 70);
 }
 
 #perpmotion {
@@ -531,9 +535,11 @@ body::-webkit-scrollbar-thumb {
 
 #about-contentdiv {
 	width: 70%;
-	background-image: linear-gradient(black, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.473), transparent);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: rgba(0, 0, 0, 0.6) url('./artwork/bg2.jpg');
+	background-blend-mode: darken;
+	/* background-image: linear-gradient(black, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.473), transparent); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -584,7 +590,7 @@ body::-webkit-scrollbar-thumb {
 	width: 50px;
 	position: absolute;
 	margin-top: 40px;
-	left: 20px;
+	left: 40px;
 	transition: 0.15s;
 }
 
@@ -596,7 +602,7 @@ body::-webkit-scrollbar-thumb {
 	width: 50px;
 	position: absolute;
 	margin-top: 120px;
-	left: 20px;
+	left: 40px;
 	transition: 0.15s;
 }
 
@@ -608,7 +614,7 @@ body::-webkit-scrollbar-thumb {
 	width: 50px;
 	position: absolute;
 	margin-top: 40px;
-	right: 20px;
+	right: 40px;
 	transition: 0.15s;
 }
 
@@ -620,7 +626,7 @@ body::-webkit-scrollbar-thumb {
 	width: 50px;
 	position: absolute;
 	margin-top: 120px;
-	right: 20px;
+	right: 40px;
 	transition: 0.15s;
 }
 
@@ -631,9 +637,11 @@ body::-webkit-scrollbar-thumb {
 #contact {
 	height: 100vh;
 	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.603);
 	display: flex;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);	
+	/* border-top: 1px solid rgb(0, 39, 39); */
+	border-bottom: 2px solid rgb(0, 58, 58);
+	box-shadow: 0 -5px 10px rgb(0, 0, 0);
 }
 
 #contactForm {
@@ -642,6 +650,9 @@ body::-webkit-scrollbar-thumb {
 	align-items: center;
 	justify-content: center;
 	width: 70%;
+	background: rgba(0,0,0, 0.6) url('./artwork/bg1.jpg');
+	background-size: cover;
+	background-blend-mode: darken;
 }
 
 #contact-introdiv {
@@ -663,8 +674,8 @@ body::-webkit-scrollbar-thumb {
 .homebtn-contact {
 	position: absolute;
 	width: 50px;
-	left: 20px;
-	top: 20px;
+	left: 40px;
+	top: 40px;
 	transition: 0.15s;
 }
 
@@ -726,12 +737,39 @@ label {
 	filter: invert();
 	top: 50%;
 	transform: translateY(-50%);
-	left: 20px;
+	left: 40px;
 }
 
 .vg2 {
 	filter: invert();
 	top: 50%;
 	transform: translateY(-50%);	
-	right: 20px;
+	right: 40px;
+}
+
+.contactForward {
+	font-family: 'Dosis';
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.4rem;
+	margin-bottom: 50px;
+}
+
+.about-items {
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	backdrop-filter: blur(3px);
+	/* background-color: rgba(0, 0, 0, 0.603); */
+	border-radius: 20px;
+	border: 1px solid rgb(87, 87, 87);
+	padding: 15px;
+}
+
+.skills {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }

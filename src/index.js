@@ -29,12 +29,12 @@ home.addEventListener('click', () => {
 
 window.onscroll = () => {
 	if (isInViewport(break1)) {
-		mandela.src = `./artwork/nelly.jpg`;
+		mandela.src = `./src/artwork/nelly.jpg`;
 	}
 	if (isInViewport(break2)) {
-		mandela.src = `./artwork/gandizzle.jpg`;
+		mandela.src = `./src/artwork/gandizzle.jpg`;
 	}
 	if (isInViewport(break3)) {
-		mandela.src = `./artwork/johnnyboy.jpg`;
+		mandela.src = `./src/artwork/johnnyboy.jpg`;
 	}
 };

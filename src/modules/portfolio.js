@@ -9,7 +9,7 @@ export const portfolio = {
 		'To-Do List',
 		'BNK Chicken',
 		'Awesome Books',
-		'Developer Portfolio',
+		'Kais Castle',
 		'Leaderboard',
 		'Mens Conference'],
 
@@ -41,7 +41,7 @@ export const portfolio = {
 		`,
 		'The (un)official BNK Chicken website. Work in progress...',
 		'A simple web-library of "awesome books."\nStore and remove from local storage.',
-		'The site you\'re currently on! :)',
+		'A React game (based on Flappy Bird) I made for my son.',
 		'A leaderboard webapp built using a Microverse API to store and retrieve data.',
 		'The 2023 Men\'s Conference page.\n\n\nComplete with the day\'s program and guest speakers.'],
 
