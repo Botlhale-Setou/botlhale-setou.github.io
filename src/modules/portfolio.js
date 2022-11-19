@@ -46,12 +46,12 @@ export const portfolio = {
 		'The 2023 Men\'s Conference page.\n\n\nComplete with the day\'s program and guest speakers.'],
 
 	images: [['./artwork/portfolio/pp-popup.png'],
-		['./artwork/portfolio/tdl-home.png'],
-		['./artwork/portfolio/bnkc-home.png'],
-		['./artwork/portfolio/ab1.png'],
-		['./artwork/portfolio/dp.png'],
-		['./artwork/portfolio/l1.png'],
-		['./artwork/portfolio/mc1.png']],
+		['./src/artwork/portfolio/tdl-home.png'],
+		['./src/artwork/portfolio/bnkc-home.png'],
+		['./src/artwork/portfolio/ab1.png'],
+		['./src/artwork/portfolio/dp.png'],
+		['./src/artwork/portfolio/l1.png'],
+		['./src/artwork/portfolio/mc1.png']],
 
 	live: [''],
 
