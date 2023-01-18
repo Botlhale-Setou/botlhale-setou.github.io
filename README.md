@@ -10,7 +10,7 @@ my-site2 version 1
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://botlhale-setou.github.io)
 
 
 ### Prerequisites
