@@ -378,6 +378,7 @@ body::-webkit-scrollbar-thumb {
 	height: 700px;
 	margin-bottom: 35px;
 	object-fit: contain;
+	border-radius: 20px;
 }
 
 #port-work-desc {
@@ -433,6 +434,7 @@ body::-webkit-scrollbar-thumb {
 	cursor: pointer;
 	font-size: 14px;
 	transition: 0.3s;
+	width: 150px;
 }
 
 .port-work-btn:hover {

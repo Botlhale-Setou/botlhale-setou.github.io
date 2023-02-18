@@ -13,8 +13,8 @@ export default function loadPopup(index) {
 				<p id="port-work-desc">${portfolio.desc[index]}</p>
 
 				<div id="port-work-btns">
-					<button id="port-work-live" class="port-work-btn">View Live</button>
-					<button id="port-work-source" class="port-work-btn">See Source</button>
+					<a href="${portfolio.live[index]}" target="_blank"><button id="port-work-live" class="port-work-btn">View Live</button></a>
+					<a href="${portfolio.source[index]}" target="_blank"><button id="port-work-source" class="port-work-btn">See Source</button></a>
 				</div>
 			</div>
 
