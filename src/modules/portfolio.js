@@ -46,12 +46,12 @@ export const portfolio = {
 		`],
 
 	images: [['./src/artwork/portfolio/recipe-app2.PNG'],
-		['./src/artwork/portfolio/mapfrica1.png'],
-		['./src/artwork/portfolio/space-travellers-hub.png'],
-		['./src/artwork/portfolio/l1.png'],
-		['./src/artwork/portfolio/math.png'],
-		['./src/artwork/portfolio/ab.png'],
-		['./src/artwork/portfolio/mc1.png']],
+		['./src/artwork/portfolio/mapfrica1.PNG'],
+		['./src/artwork/portfolio/space-travellers-hub.PNG'],
+		['./src/artwork/portfolio/l1.PNG'],
+		['./src/artwork/portfolio/math.PNG'],
+		['./src/artwork/portfolio/ab.PNG'],
+		['./src/artwork/portfolio/mc1.PNG']],
 
 	live: ['https://recipe-app-0tvs.onrender.com/',
 	'http://mapfrica.onrender.com/',
