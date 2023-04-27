@@ -775,3 +775,18 @@ label {
 	flex-direction: column;
 	align-items: center;
 }
+
+.pre-info {
+	position: absolute;
+	margin-top: 300px;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.gitpage {
+	color: red;
+	text-decoration: underline;
+}
