@@ -3,12 +3,18 @@
 		display: none;
 	}
 
+	#close {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	.d {
 		display: none;
 	}
+
+	
+	
 
 }
 
@@ -49,9 +55,43 @@ a {
 	background-image: linear-gradient(rgb(0, 99, 102), transparent);
 }
 
+#bars {
+	font-size: 30px;
+}
+
+#close {
+	font-size: 30px;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
 .nav-list {
-	list-style: none;
 	display: flex;
+	list-style-type: none;
+}
+
+#me {
+	position: absolute;
+	height: 300px;
+	top: -161px;
+	left: 330px;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	/* filter: drop-shadow(-7px 5px 5px black); */
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-list {
+		list-style-type: none;
+		display: none;
+		background-color: rgba(2, 2, 2, 0.877);
+	}
+
+	#me {
+		display: none;
+	}
+
 }
 
 .nav-list-item {
@@ -118,6 +158,12 @@ a {
 	border-top: 3px solid rgb(226, 255, 246);
 }
 
+@media only screen and (max-width: 768px) {
+	#content-div {
+		width: 70vw;
+	}
+}
+
 #intro-div {
 	display: flex;
 	flex-direction: column;
@@ -125,15 +171,6 @@ a {
 	justify-content: center;
 }
 
-#me {
-	position: absolute;
-	height: 300px;
-	top: -161px;
-	left: 330px;
-	border-top-left-radius: 30%;
-	border-top-right-radius: 30%;
-	/* filter: drop-shadow(-7px 5px 5px black); */
-}
 
 #propic {
 	height: 200px;
@@ -156,6 +193,13 @@ a {
 	z-index: 2;
 }
 
+@media only screen and (max-width: 768px) {
+	#title {
+		font-size: 50px;
+		line-height: 40px;
+	}
+}
+
 #title-help {
 	font-size: 1.8rem;
 	font-family: 'Dosis';
@@ -167,6 +211,13 @@ a {
 	/* margin-bottom: 25px; */
 	text-shadow: -1px 1px 1px rgb(226, 255, 246, 0.7);
 	/* border-bottom: 2px solid rgb(196, 196, 0); */
+}
+
+@media only screen and (max-width: 768px) {
+	#title-help {
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 .hero-btn {
@@ -186,6 +237,22 @@ a {
 	transition: 0.2s;
 	cursor: pointer;
 	box-shadow: -3px 3px 3px rgba(0, 39, 0, 0.788);
+}
+
+@media only screen and (max-width: 768px) {
+	.btnshome {
+		flex-direction: column;
+	}
+
+	.hero-btn {
+		font-size: 15px;
+	}
+
+	#break1-text {
+		font-size: 5px;
+		text-align: center;
+		margin: 0 5vw;
+	}
 }
 
 .hero-btn:hover {
@@ -288,8 +355,24 @@ a {
 	font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 768px) {
+	#break1-text {
+		font-size: 15px;
+	}
+
+	
+}
+
 #break2-text {
 	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	#break2-text {
+		font-size: 15px;
+		text-align: center;
+		margin: 0 5vw;
+	}	
 }
 
 #mandela-span {
@@ -356,6 +439,12 @@ body::-webkit-scrollbar-thumb {
 	position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+	#port-navdiv {
+		/* display: none; */
+	}
+}
+
 #port-work {
 	width: 71%;
 	height: 100%;
@@ -370,6 +459,12 @@ body::-webkit-scrollbar-thumb {
 	transition: 0.6s;
 	left: -100vw;
 	z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+	#port-work {
+		width: 100%;
+	}	
 }
 
 #port-work-img {
@@ -400,6 +495,12 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+@media only screen and (max-width: 768px) {
+	#port-work-exit {
+		font-size: 2rem;
+	}	
+}
+
 #port-work-exit:hover {
 	color: red;
 }
@@ -408,6 +509,12 @@ body::-webkit-scrollbar-thumb {
 	font-size: 2.5rem;
 	margin-bottom: 20px;
 	font-family: 'Lexend Deca';
+}
+
+@media only screen and (max-width: 768px) {
+	#port-work-title {
+		font-size: 2rem;
+	}	
 }
 
 #port-work-introdiv {
@@ -435,6 +542,12 @@ body::-webkit-scrollbar-thumb {
 	font-size: 14px;
 	transition: 0.3s;
 	width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+	.port-work-btn {
+		width: 100px;
+	}	
 }
 
 .port-work-btn:hover {
@@ -477,6 +590,12 @@ body::-webkit-scrollbar-thumb {
 	font-family: 'Lexend Deca';
 }
 
+@media only screen and (max-width:768px) {
+	.cardTitle {
+		font-size: 1rem;
+	}
+}
+
 #port-blacken {
 	height: 100%;
 	width: 100%;
@@ -510,6 +629,12 @@ body::-webkit-scrollbar-thumb {
 	border-top: 1px solid rgb(0, 70, 70);
 }
 
+@media only screen and  (max-width: 768px) {
+	#about {
+		height: 200vh;
+	}	
+}
+
 #perpmotion {
 	height: 90px;
 	width: 90px;
@@ -526,6 +651,12 @@ body::-webkit-scrollbar-thumb {
 	background-position: 60%;
 	display: flex;
 	z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+	#about-introdiv	{
+		display: none;
+	}
 }
 
 #about-title {
@@ -549,11 +680,25 @@ body::-webkit-scrollbar-thumb {
 	padding: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+	#about-contentdiv {
+		width: 100%;
+	}
+}
+
 #about-desc {
 	font-family: 'Raleway';
 	text-align: center;
 	font-size: 1.4rem;
 	z-index: 2;
+	margin-right: 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+	#about-desc {
+		font-size: 15px;
+		margin-right: 0;
+	}
 }
 
 #about-darken {
@@ -576,6 +721,11 @@ body::-webkit-scrollbar-thumb {
 #about-btns {
 	display: flex;
 	gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	#about-btns > a {
+	}	
 }
 
 /* #about-portbtn {
@@ -657,6 +807,12 @@ body::-webkit-scrollbar-thumb {
 	background-blend-mode: darken;
 }
 
+@media only screen and (max-width: 768px) {
+	#contactForm {
+		width: 100%;
+	}	
+}
+
 #contact-introdiv {
 	width: 30%;
 	background-image: url('./artwork/contact.jpg');
@@ -665,6 +821,12 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	align-items: center;
 	position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+	#contact-introdiv {
+		display: none;
+	}	
 }
 
 #contact-title {
@@ -695,6 +857,12 @@ body::-webkit-scrollbar-thumb {
 	padding-left: 8px;
 }
 
+@media only screen and (max-width: 768px) {
+	#fname {
+		width: 70%;
+	}	
+}
+
 #fmail {
 	width: 30%;
 	margin-bottom: 10px;
@@ -703,6 +871,12 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 8px;
 	padding-left: 8px;
 	font-family: 'Lexend Deca';
+}
+
+@media only screen and (max-width: 768px) {
+	#fmail {
+		width: 70%;
+	}	
 }
 
 #fmsg {
@@ -714,6 +888,12 @@ body::-webkit-scrollbar-thumb {
 	padding-left: 8px;
 	padding-top: 6px;
 	font-family: 'Lexend Deca';
+}
+
+@media only screen and (max-width: 768px) {
+	#fmsg {
+		width: 70%;
+	}	
 }
 
 label {
@@ -757,16 +937,23 @@ label {
 	margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+	.contactForward {
+		margin: 0 25px 15px 25px;
+	}	
+}
+
 .about-items {
 	z-index: 1;
-	position: absolute;
 	top: 40px;
 	right: 40px;
+	position: absolute;
 	backdrop-filter: blur(3px);
 	/* background-color: rgba(0, 0, 0, 0.603); */
 	border-radius: 20px;
 	border: 1px solid rgb(87, 87, 87);
 	padding: 15px;
+	margin-bottom: 30px;
 }
 
 .skills {
@@ -784,6 +971,12 @@ label {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+@media only screen and  (max-width: 768px) {
+	.pre-info {
+		margin: 100px 50px;
+	}	
 }
 
 .gitpage {
